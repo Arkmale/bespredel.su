@@ -1,0 +1,87 @@
+/* ЗВЁЗДНОЕ НЕБО */
+
+/*4*/
+.stars {
+	position:relative;top:100px;left:400px;height:1.5px;width: 1.5px;
+	border:1px solid rgba(229, 229, 229,.5); background-color: rgba(229, 229, 229,.5);
+	border-radius: 3px/3px;
+	-moz-animation: stars 3s ease-in-out infinite;
+	-webkit-animation: stars 3s ease-in-out infinite;
+	-o-animation: stars 3s ease-in-out infinite;
+}
+/*3*/
+.stars2 {
+	position:relative;top:150px;left:200px;height:1px;width: 1px;
+	border:1px solid rgba(229, 229, 229,.5); background-color: rgba(229, 229, 229,.5);
+	border-radius: 3px/3px;
+	-moz-animation: stars2 3s ease-in-out infinite;
+	-webkit-animation: stars2 3s ease-in-out infinite;
+	-o-animation: stars2 3s ease-in-out infinite;
+}
+/*1*/
+.stars3 {
+	position:relative;left:20px;top:75px;height:1px;width: 1px;
+	border:1px solid rgba(255, 255, 255,.9); background-color: rgba(255, 255, 255,.9);
+	border-radius: 3px/3px;
+	-moz-animation: stars3 2s ease-in-out infinite;
+	-webkit-animation: stars3 2s ease-in-out infinite;
+	-o-animation: stars3 2s ease-in-out infinite;
+}
+/*7*/
+.stars4 {
+	position:relative;top:160px;left:55%;height:1px;width: 1px;
+	border:1px solid rgba(255, 255, 255,.9); background-color: rgba(255, 255, 25,.9);
+	border-radius: 3px/3px;
+	-moz-animation: stars2 2s ease-in-out infinite;
+	-webkit-animation: stars2 2s ease-in-out infinite;
+	-o-animation: stars2 2s ease-in-out infinite;
+}
+/*6*/
+.stars5 {
+	position:relative;top:100px;left:550px;height:1px;width: 1px;
+	border:1px solid rgba(255, 255, 255,.9); background-color: rgba(255, 255, 25,.9);
+	border-radius: 3px/3px;
+	-moz-animation: stars3 3s ease-in-out infinite;
+	-webkit-animation: stars3 3s ease-in-out infinite;
+	-o-animation: stars3 3s ease-in-out infinite;
+}
+
+.stars6 {
+	position:relative;top:140px;left:35%;height:1px;width: 1px;
+	border:1px solid rgba(255, 255, 255,.9); background-color: rgba(255, 255, 25,.9);
+	border-radius: 3px/3px;
+	-moz-animation: stars 2s ease-in-out infinite;
+	-webkit-animation: stars 2s ease-in-out infinite;
+	-o-animation: stars 2s ease-in-out infinite;
+}
+
+.stars7 {
+	position:relative;top:70px;left:15%;height:1px;width: 1px;
+	border:1px solid rgba(255, 255, 255,.9); background-color: rgba(255, 255, 25,.9);
+	border-radius: 3px/3px;
+	-moz-animation: stars2 4s ease-in-out infinite;
+	-webkit-animation: stars2 4s ease-in-out infinite;
+	-o-animation: stars2 4s ease-in-out infinite;
+}
+
+@keyframes stars {
+	0% {opacity:0}
+	25% {opacity:.5}
+	50% {opacity:1}
+	75% {opacity:.5}
+	100% {opacity:0}
+}
+
+
+@keyframes stars2 {
+	0% {opacity:.7}
+	50% {opacity:0}
+	100% {opacity:.3}
+}
+
+@keyframes stars3 {
+	25% {opacity:.5}
+	50% {opacity:0}
+	75% {opacity:.3}
+}
+

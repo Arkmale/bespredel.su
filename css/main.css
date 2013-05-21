@@ -1,0 +1,215 @@
+@import url("../css/font.css");
+@import "main.css";
+
+html {font-size: 100.01%;background: url('../img/background-night.png') repeat-x;overflow-x:hidden}
+body {color: #353839;font: normal 12px Arial,sans-serif;padding-top: 75px;
+		position:relative}
+p {font-size: 1.0em;line-height: 1.8em;margin-bottom: 15px}
+address {font-style: normal;padding-bottom: 15px}
+
+/*******************************************************************************************************************
+*  LINKS                                                                                                           *
+*******************************************************************************************************************/
+a, a:link, a:focus {color: #0a9cd2;outline: 0;text-decoration: none;}
+a:visited {color: #0a9cd2}
+a:hover {color: #000;text-decoration: none}
+
+/*******************************************************************************************************************
+*  TITLES                                                                                                          *
+*******************************************************************************************************************/
+h1, h2, h3, h4, h5 {margin: 0 0 10px 0}
+/*h1 {font-size: 4.0em;margin: 0;text-align: center;color: #d77400;text-shadow: 1px 1px 1px #f8c874;font-family: "MyriadPro-BoldCond";}
+*/
+h1 {font-family: "Arial", sans-serif;
+        font-size: 60px;
+        text-align: right;
+        font-weight: bold;
+        z-index:-100}
+h1 {text-shadow: 
+    	  0 -1px 0 #fff,
+          0 1px 10px rgba(0,0,0,.6),
+          0 6px 1px rgba(0,0,0,.1),
+          0 0 5px rgba(0,0,0,.2),
+          0 1px 3px rgba(0,0,0,.3),
+          0 3px 5px rgba(0,0,0,.2),
+          0 7px 10px rgba(0,0,0,.25),
+          0 15px 10px rgba(0,0,0,.2),
+          0 25px 15px rgba(0,0,0,.15);}
+         
+h2 {font-size: 1.2em;padding-bottom: 10px;color: #353839;}
+h3 {font-size: 1.2em;color: #353839;margin-bottom: 10px;text-transform: uppercase;}
+h4 {font-size: 1.2em;color: #353839;text-transform: lowercase;padding-left: 15px;padding-top:5px}
+h5 {font-size: 1.1em}
+
+
+/*******************************************************************************************************************
+*  HEADER                                                                                                          *
+*******************************************************************************************************************/
+#header {position: absolute;top: 0;left: 0;height: 111px;width: 100%;margin: 0 15px;}
+
+#header #logo {background: url('../img/logo.png') no-repeat;display: block;
+				height: 112.5px;left: 0;z-index: 10;text-indent: -9999px;
+				position: absolute;top: 30px;width: 170px;color: #000;
+				}
+
+@keyframes slide {
+  0% { color: #F1A20C;}
+  50% {color: rgba(241, 162, 12,.5);}
+    
+}
+
+/* navigation */
+#header #navigation {position: fixed;right: 60px;top: 20px;
+					background:#1A1C1E;border: 1px solid #3a3a3a;z-index:100;}
+#header #navigation li {display: inline-block;}
+#header #navigation li a {display: inline-block;font-size: 12px;color: #7a7a7a;text-decoration: none;
+								-moz-transition: all .3s;
+								-webkit-transition:all .3s;
+								-o-transition:all .3s;
+								transition:all .3s;}
+								
+#header #navigation li a span {display: inline-block;height: 33px;line-height: 33px;padding: 0 15px;}
+#header #navigation li.active a {color: #fff;font-weight: bold;}
+#header #navigation li a:hover {line-height: 33px; width: 100%;color: #F1A20C;
+								background:rgb(42, 42, 26);
+								-moz-animation: slide 1.5s ease-in-out infinite;
+								-webkit-animation: slide 1.5s ease-in-out infinite;
+								-o-animation: slide 1.5s ease-in-out infinite;
+								animation: slide 1.5s ease-in-out infinite;}
+
+#header #navigation li ul {overflow: hidden;position:absolute;height:0;width:88px;}
+#header #navigation li:hover ul {display:block;text-align:left;height:200px;
+								-moz-transition: height .5s ease-in-out .3s;
+								-webkit-transition: height .5s ease-in-out .3s;
+								-o-transition: height .5s ease-in-out .3s;
+								transition: height .5s ease-in-out .3s;}
+								
+#header #navigation li ul li {display:block;line-height:13px;border-bottom: 1px solid #534A42;
+							  background-color: #413831;white-space:nowrap;z-index:100;}
+#header #navigation li ul li a {padding: 5px 20px;}
+#header #navigation li ul li a:hover {background-color: #413831;padding: 0 20px;}
+
+
+/*******************************************************************************************************************
+*  INTRO    background-image: url(../img/night.png);                                                 *
+*******************************************************************************************************************/
+#intro {height: 135px;line-height: 135px;margin-bottom: 30px;}
+
+/*******************************************************************************************************************
+*  CONTENT                                                                                                         *
+*******************************************************************************************************************/
+#container {width:960px;padding: 0;margin: 0 auto;overflow : hidden;}
+
+#container::after {
+    clear: both;
+    content: " ";
+    display: inline-block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    
+}
+
+/*******************************************************************************************************************
+*  OTHER STYLES                                                                                                    *
+*******************************************************************************************************************/
+.high {font-weight: bold;color: #2d7bac}
+.inner {padding: 15px 20px}
+.middle {margin: 0 auto;position: relative;}
+
+.w900 {width: 900px;}
+#w650 {float:right;width:600px;border: 1px solid #E5E5E5;margin: 0 25px 0 0;
+		padding:5px;background:#ffffff;background-image:url(../img/white_wall.png);}
+#w250 {float:left;width: 250px;margin: -30px 0 0 25px;padding: 15px;}
+.street {padding: 5px; text-align:center;
+		 text-transform: uppercase;font-size: 1.1em;margin-bottom: 5px;}
+
+.cloud {display:block;margin: 15px 0;padding: 10px;
+		border: 1px solid #E5E5E5;background-image:url(../img/white_wall.png)}
+
+.cloud a {color: #79B5F2}
+.cloud a:hover {color: #6294C9}
+
+a.thumb img {border: 1px solid #e0e0e0}
+
+#circ1{
+    -moz-border-radius: 5px/5px;
+    -webkit-border-radius: 5px 5px;
+    border-radius: 5px/5px;
+    background-color:#F1A30C;
+    width:9px;
+    height:9px;
+    position:absolute;
+    top: 5px;
+}
+#circ2{
+    -moz-border-radius: 5px/5px;
+    -webkit-border-radius: 5px 5px;
+    border-radius: 5px/5px;
+    border-left:solid 2px #fff;
+    border-top:solid 1px #fff;
+    border-bottom:dotted 1px #fff;
+    width:7px;
+    height:7px;
+    position:absolute;
+    top: 5px;
+    left: 15px
+
+}
+
+#cols3 .col h3 {padding: 5px 0}
+#cols3 .col a {color:#000;text-transform:lowercase}
+#cols3 .col h3 a {color:#79B5F2;font-weight:100}
+#cols3 .col h3 a:hover {color:#6294C9;}
+
+#cols3 .col-more {background:#F5F5F5; padding: 5px;}
+#cols3-top {width:960px; height:5px; margin-top:15px; font-size:0; line-height:0; overflow:hidden;}
+#cols3 {background-image:url(../img/white_wall.png);display:inline-block;}
+
+        .col-text {color: #333;padding:0 15px 20px;font-family: Arial,sans-serif;
+        			font-size: 12.5px;border-bottom:1px solid #E5E5E5;
+        			letter-spacing:.5px;line-height: 1.4em;}
+        .col-text p {margin:0;}
+        .col-text ul {margin-bottom:0;}
+
+/*font style*/
+#font {text-shadow: #FFF 1px 0 0px, #000 0 1px 0px, #FFF -1px 0 0px, #000 0 -1px 0px;}
+
+
+/* === Clearfix === */
+.clear {
+	clear:both;
+	display:block;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+	width:0
+}
+.clearfix:after {
+	clear:both;
+	content:' ';
+	display:block;
+	font-size:0;
+	height:0;
+	line-height:0;
+	visibility:hidden;
+	width:0
+}
+
+/*******************************************************************************************************************
+*  FOOTER                                                                                                          *
+*******************************************************************************************************************/
+
+#footer {position: absolute;left:0;width:100%;
+		 background: -moz-linear-gradient(to bottom, #565656 0%, #2D2D2D 100%) repeat scroll 0 0 transparent;
+		 background: -webkit-linear-gradient(to bottom, #565656 0%, #2D2D2D 100%) repeat scroll 0 0 transparent;
+		 background: -o-linear-gradient(to bottom, #565656 0%, #2D2D2D 100%) repeat scroll 0 0 transparent;
+		 background: -ms-linear-gradient(to bottom, #565656 0%, #2D2D2D 100%) repeat scroll 0 0 transparent;
+		 background: linear-gradient(to bottom, #565656 0%, #2D2D2D 100%) repeat scroll 0 0 transparent;
+		 		 		 		 		 }
+#footer p {color: #8e8e8e;font-size: 11px;padding: 23px 30px 0}
+#footer p a {color: #8e8e8e;}
+
+#footer p.floatLeft a {color: #ddd}
